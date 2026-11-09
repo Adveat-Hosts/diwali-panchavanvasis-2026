@@ -1344,8 +1344,13 @@
         ---------------------------------------------------- */
         const wishModal = document.getElementById('wishModal');
         let wishWallData = [
-            { id: 1, author: "Adveat", text: "Wishing all Panchavanvasis a glorious, bright, and prosperous Diwali!", time: formatDateTime(Date.now()) }
-        ];
+    { 
+        id: 1, 
+        author: "Adveat", 
+        text: "It's me, hi, I'm the.....", 
+        time: formatDateTime(new Date('2026-11-09T05:55:00Z')) 
+    }
+];
 
         window.updateWishWallData = function(wishes) {
             wishWallData = wishes.map(w => ({
